@@ -1,0 +1,9 @@
+def ends_with_ab(string):
+    return string.endswith("ab")
+test_strings = ["ab", "abc", "aab", "xyzab", "abab", "xya"]
+
+for s in test_strings:
+    if ends_with_ab(s):
+        print(f"The string '{s}' is accepted (ends with 'ab').")
+    else:
+        print(f"The string '{s}' is rejected (does not end with 'ab').")
